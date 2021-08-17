@@ -1,0 +1,23 @@
+{
+  "name": "dot-legacy-v2",
+  "version": "1.0.0",
+  "description": "General and Moderation bot by a solo dev. This the second version of 'Dot-Legacy' bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node src/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DotHashir/Dot-Legacy-V2.git"
+  },
+  "author": "Dot-Hashir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DotHashir/Dot-Legacy-V2/issues"
+  },
+  "homepage": "https://github.com/DotHashir/Dot-Legacy-V2#readme",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  }
+}
