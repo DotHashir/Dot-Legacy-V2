@@ -7,7 +7,7 @@ const guildId = '774588656597598210';
 
 module.exports = (client) => {
     client.handleCommands = async (commandFolders, path) => {
-        client, commandArray = [];
+        client.commandArray = [];
         for (folder of commandFolders) {
             const commandFiles = fs.readdirSync(`${path}/${folder}`).filter(file => file.endsWith('.js'));
 
@@ -16,7 +16,7 @@ module.exports = (client) => {
                 // set a new item in the Collection
                 // with the key as the command name and the value as the exported module
                 client.commands.set(command.data.name, command);
-                client.commandArray.push(command.data, toJSON());
+                client.commandArray.push(command.data.toJSON());
             }
         }
         const rest = new REST({ version: '9' }).setToken(process.env.token);
